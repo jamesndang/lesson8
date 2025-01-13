@@ -1,5 +1,17 @@
 const appOperations = require('../src/appOperations');
 
-TextDecoderStream("multiplication property of zero", ()=> {
-    expected(appOperations(5,0)).toBe(0);
+test("multiplication property of zero", ()=> {
+    expect(appOperations.multiply(5,0)).toBe(0);
+});
+
+test("adding two values", ()=> {
+    expect(appOperations.add(5,5)).toBe(10);
+});
+
+test("test subtraction", ()=> {
+    expect(appOperations.subtract(15,5)).toBe(10);
+});
+
+test("test devide", ()=> {
+    expect(appOperations.devide(15,5)).toBe(3);
 });
